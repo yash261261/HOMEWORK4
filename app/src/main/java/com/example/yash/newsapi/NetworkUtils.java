@@ -27,7 +27,7 @@ public class NetworkUtils {
 
 
     final static String PARAM_API="apiKey";
-    final static String apikey="fa0f164779a54f41a9d16d0329bf51af";
+    final static String apikey="";
 
 
 
