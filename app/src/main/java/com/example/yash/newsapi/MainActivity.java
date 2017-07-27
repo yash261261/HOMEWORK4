@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             ArrayList<NewsItem> result = null;
 
 
-            //URL Search = NetworkUtils.buildUrl(searchUrl);
             String NewsApiSearchResults = null;
             try {
 
@@ -100,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
                     public void onItemClick(int clickedItemIndex) {
 
                         String url = data.get(clickedItemIndex).getURL();
-                        //   Log.d(TAG, String.format("Url %s", url));
                         openWebPage(url);
                     }
                 });

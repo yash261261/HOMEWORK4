@@ -17,11 +17,11 @@ public class NewsItem {
 
 
         public NewsItem(String Author, String title, String Description, String URL, String URLtoImge, String PublishedAt){
-          //  this.Author = Author;
+            this.Author = Author;
             this.title = title;
             this.Description = Description;
             this.URL = URL;
-       //     this.URLtoImge = URLtoImge;
+           this.URLtoImge = URLtoImge;
             this.PublishedAt = PublishedAt;
 
         }
