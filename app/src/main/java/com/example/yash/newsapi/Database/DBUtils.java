@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.yash.newsapi.NewsItem;
 
+import java.util.ArrayList;
+
 /**
  * Created by Yash on 7/27/17.
  */
@@ -19,7 +21,7 @@ public class DBUtils {
     }
 
 
-    public static void getNews(SQLiteDatabase db, NewsItem[] newsItems) {
+    public static void getNews(SQLiteDatabase db, ArrayList<NewsItem> newsItems) {
         db.beginTransaction();
         deleteAllNews(db);
         try {
@@ -27,6 +29,7 @@ public class DBUtils {
                 ContentValues cv = new ContentValues();
                 cv.put(Contract.TABLE_ARTICLES.COLUMN_NAME_TITLE,
                         newsItem.getTitle());
+                cv.put(Contract.TABLE_ARTICLES.COLUMN_NAME_AUTHOR,newsItem.getAuthor());
                 cv.put(Contract.TABLE_ARTICLES.COLUMN_NAME_DESCRIPTION,
                         newsItem.getDescription());
                 cv.put(Contract.TABLE_ARTICLES.COLUMN_NAME_PUBLISHED,

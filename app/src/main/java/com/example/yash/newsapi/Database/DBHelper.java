@@ -11,6 +11,9 @@ import android.util.Log;
 
 public class DBHelper extends SQLiteOpenHelper {
 
+
+    //SQLiteOpenHelper TO MAINTAIN NEWS
+
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "articles.db";
     private static final String TAG = "dbhelper";
